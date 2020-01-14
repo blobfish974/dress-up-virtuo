@@ -1,0 +1,91 @@
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+
+
+input[type=number] {
+  color: #000000;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px #333232;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-left: 80px;
+  width: 250px;
+}
+
+
+input{
+  color: #000000;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px #333232;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-left: 80px;
+  width: 250px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+/*input[type=text] {
+  width: 100%;
+  color: #000000;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px #333232;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-left: 80px;
+  width: 250px;
+}*/
+
+
+
+body {
+	color: white;
+  font-family: 'Poppins', sans-serif; 
+/*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+
+  background-color:#222222;
+}
+
+button {
+background-color:#32d1ce;
+	border-radius:28px;
+	border:1px solid #32d1ce;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+
+}
+
+
+.js-option{
+margin-left: 5px;
+
+}
+.text-option{
+margin-left: 80px;
+
+}
+
+.explain-text{
+	margin-left: 80px;
+
+ 	margin-right:80px;
+
+/* 	padding-right: 30px;
+  padding-left: 80px;*/
+
+
+}
+
+

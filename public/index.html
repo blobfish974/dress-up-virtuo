@@ -2,11 +2,18 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with govirtuo.com</title>
+    <meta charset='UTF-8'/>
+    <link rel='stylesheet' href='styles.css'/>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
   </head>
   <body>
+    <div style="text-align:center;">
+      <br/><br/>
+      <h1> Compute your rental price! </h1><br/>
+    </div>
     <div id="car">
       <input class="js-name" type="text" placeholder="Car name"/>
-      <input class="js-price-by-day" type="number" placeholder="Price by day"/>
+      <input class="js-price-by-day quantity" type="number" placeholder="Price by day"/>
       <input class="js-price-by-km" type="number" placeholder="Price by km"/>
     </div>
     <div id="rental">
@@ -14,11 +21,25 @@
       <input class="js-begin" type="date" placeholder="Rental begin date"/>
       <input class="js-end" type="date" placeholder="Rental end date"/>
       <input class="js-distance" type="number" placeholder="Distance in km"/>
+      <br/><br/>
+      <a class="text-option"> Deductible Option: </a>
       <input class="js-option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
+    <div style="text-align:center;">
+      <br/><br/>
+      <button id="compute" class="btn btn-primary" >Compute</button><br/>
+    </div>
+    
     <div id="actors"></div>
     <script src="virtuo.js"></script>
     <script src="index.js"></script>
+
+    <br/><br/><br/><br/>
+    <p class="explain-text" style="margin-left: 4em; font-weight:bold;">HELP: </p>
+    <a class="explain-text">This calculator compute your rental price according to different arguments.</a><br/>
+    <a class="explain-text">It then allows you to see how is your rental price is divided between the different actors (you, the partner wich owes the car, insurance, treasury and virtuo the rental company)</a><br/>
+    <a class="explain-text">For further insight on virtuo: https://www.govirtuo.com/fr/</a>
+
+
   </body>
 </html>
