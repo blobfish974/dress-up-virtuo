@@ -105,7 +105,7 @@ const VIRTUO = (() => { //eslint-disable-line
     const days = getDays(begin, end);
     const price = rentalPrice(car, days, distance);
     const commission = rentalCommission(price, days);
-    const deductibleOption = DEDUCTIBLE_PER_DAY * days * +option;
+    const deductibleOption = DEDUCTIBLE_PER_DAY * days  +option;
 
     var actors = [{
       'who': 'driver',
