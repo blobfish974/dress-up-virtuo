@@ -9,7 +9,7 @@
       return `
           <div class="actor">
             <span>${actor.who}</span>
-            <span>${actor.type}</span>
+            <span>${actor.type}: </span>
             <span class="money-amount">${actor.amount}</span>
           </div>
         `;
