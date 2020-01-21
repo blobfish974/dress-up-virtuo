@@ -83,7 +83,25 @@ margin-left: 80px;
  	margin-right:8%;
  	padding: :30%;
 
-
 }
+
+.link{
+	color:white;
+}
+
+.actor{
+	color:#34a4eb;
+	/*margin-left: 40%;*/
+	text-align:center;
+}
+
+
+.expensive-rent{
+	color:red;
+}
+.cheap-rent{
+	color:green;
+}
+
 
 
