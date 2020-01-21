@@ -68,7 +68,7 @@ const VIRTUO = (() => { //eslint-disable-line
     const value = parseFloat((price * PERCENT_COMMISSION).toFixed(2));
     const insurance = parseFloat((value * PERCENT_INSURANCE).toFixed(2));
     const treasury = days * TREASURY_TAX_DAY;
-
+    value=CurrencyFormatted(value);
     return {
       insurance,
       treasury,
@@ -107,6 +107,20 @@ const VIRTUO = (() => { //eslint-disable-line
     const commission = rentalCommission(price, days);
     const deductibleOption = DEDUCTIBLE_PER_DAY * days  +option;
 
+  function CurrencyFormatted(amount) {
+    var i = parseFloat(amount);
+    if(isNaN(i)) { i = 0.00; }
+    var minus = '';
+    if(i < 0) { minus = '-'; }
+    i = Math.abs(i);
+    i = parseInt((i + .005) * 100);
+    i = i / 100;
+    s = new String(i);
+    if(s.indexOf('.') < 0) { s += '.00'; }
+    if(s.indexOf('.') == (s.length - 2)) { s += '0'; }
+    s = minus + s;
+    return s;
+  }
     var actors = [{
       'who': 'driver',
       'type': 'debit',
